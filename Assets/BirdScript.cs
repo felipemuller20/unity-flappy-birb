@@ -3,11 +3,11 @@ using UnityEngine;
 public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody2D;
-    public float jumpStrength = 10;
+    public float jumpStrength;
 
     void Start()
     {
-
+        myRigidbody2D.gravityScale = 4;
     }
 
     void Update()
